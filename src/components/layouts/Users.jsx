@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Header from '../helpers/Header'
 
 const Users = () => {
-  const [users, setUsers] = useState()
+  const [users, setUsers] = useState([])
 
   const showUsers = async () => {
     await fetch('https://jsonplaceholder.typicode.com/users')
@@ -11,14 +11,28 @@ const Users = () => {
       .catch((err) => {
         console.log(err)
       })
+    console.log(users)
   }
 
-  showUsers()
+  useEffect(() => {
+    showUsers()
+  }, [])
 
   return (
     <section>
       <Header />
-      <mausersin>users</mausersin>
+      <main>
+        <section className='cards-container'>
+          {users.map((user) => (
+            <div key={user.id} className='card-item'>
+              <h3>{user.username}</h3>
+              <p>{user.email}</p>
+              <p>{user.phone}</p>
+              <p>{user.website}</p>
+            </div>
+          ))}
+        </section>
+      </main>
     </section>
   )
 }

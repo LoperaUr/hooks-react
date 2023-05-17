@@ -1,5 +1,5 @@
-import React from "react";
-import Header from "../helpers/Header";
+import React from 'react'
+import Header from '../helpers/Header'
 
 const Todos = () => {
   return (
@@ -7,7 +7,7 @@ const Todos = () => {
       <Header />
       <main>todos</main>
     </section>
-  );
-};
+  )
+}
 
-export default Todos;
+export default Todos

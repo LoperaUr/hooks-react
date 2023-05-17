@@ -1,5 +1,5 @@
-import React from "react";
-import Header from "../helpers/Header";
+import React from 'react'
+import Header from '../helpers/Header'
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <main>home</main>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

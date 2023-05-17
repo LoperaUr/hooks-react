@@ -1,5 +1,5 @@
-import React from "react";
-import Header from "../helpers/Header";
+import React from 'react'
+import Header from '../helpers/Header'
 
 const Posts = () => {
   return (
@@ -7,7 +7,7 @@ const Posts = () => {
       <Header />
       <main>Posts</main>
     </section>
-  );
-};
+  )
+}
 
-export default Posts;
+export default Posts

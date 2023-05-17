@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;1,400&display=swap');
 
 * {
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -31,5 +31,40 @@ a:hover {
 
 main {
   height: 90vh;
-  background-color: rgb(175, 234, 67);
+  background-color: rgb(187, 197, 192);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.card-item {
+  border: 1px solid black;
+  background-color: #eee;
+  width: 30vw;
+  height: 20vh;
+  border-radius: 10px;
+  margin: 0 5px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.card-item:hover {
+  background-color: #e6d059;
+  transition: 0.4s;
+  box-shadow: black 0px 0px 10px;
+  font-size: 1.1rem;
+}
+
+.card-center-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
